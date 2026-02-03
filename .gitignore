@@ -1,0 +1,49 @@
+# --- Dependencies ---
+node_modules/
+.pnpm-store/
+jspm_packages/
+
+# --- Build Outputs ---
+# Usually 'dist' or 'out' depending on your tsconfig.json
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Debug & Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+logs/
+*.log
+
+# --- Testing ---
+coverage/
+.nyc_output/
+
+# --- IDE & OS Specific ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Optional: OS/System files ---
+.DS_Store
+.AppleDouble
+.LSOverride

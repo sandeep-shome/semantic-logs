@@ -1,0 +1,46 @@
+{
+  "name": "semantic-logs",
+  "version": "1.0.0",
+  "description": "A simple and feature rich logging framework for node.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsup src/index.ts",
+    "dev": "nodemon tsx src/index.ts",
+    "test": "npx jest",
+    "prepare": "npx husky",
+    "lint": "npx eslint --fix src/**/*.ts",
+    "format": "npx prettier --write src/**/*.ts",
+    "version": "npx @changesets/cli version",
+    "release": "npx @changesets/cli publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep-shome/semantic-log.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sandeep-shome/semantic-log/issues"
+  },
+  "homepage": "https://github.com/sandeep-shome/semantic-log#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.2.0",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.7",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.8.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  }
+}
