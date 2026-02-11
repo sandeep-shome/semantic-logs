@@ -1,0 +1,24 @@
+# Exclude source files and dev directories
+/src
+/node_modules
+/.husky
+/temp
+/.changeset
+/.github
+
+# Exclude development/config files
+.prettierignore
+.prettierrc
+eslint.config.mjs
+tsconfig.json
+tsup.config.js
+commitlint.config.mjs
+jest.config.mjs
+
+# npm package archives
+*.tgz
+
+# Exclude documentation not needed in the package
+CONTRIBUTING.md
+CHANGELOG.md
+CODE_OF_CONDUCT.md
