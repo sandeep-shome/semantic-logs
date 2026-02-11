@@ -6,4 +6,4 @@ export class Logger {
   public createLogger = (options?: LogOptions) => (msg: unknown) =>
     emitLog(msg, options);
 }
-export * from './types/index';
+export * from './types/index.d';
