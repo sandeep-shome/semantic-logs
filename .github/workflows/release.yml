@@ -1,0 +1,40 @@
+name: "Publish to npm registry"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish:
+    name: "Test and publish to npm registry"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🏗 Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: ✅ Run Tests
+        run: npm run test
+
+      - name: 🏗️ Build the project
+        run: npm run build
+
+      - name: 🚀 Publish to npm
+        run: npm run release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: 🏷️ Create Git tag
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          git tag v$VERSION
+          git push origin v$VERSION
