@@ -12,7 +12,8 @@
 eslint.config.mjs
 tsconfig.json
 tsup.config.js
-commitlint.config.mjs
+.commitlintrc.json
+.lintstagedrc
 jest.config.mjs
 
 # npm package archives
