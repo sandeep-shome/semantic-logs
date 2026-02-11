@@ -2,29 +2,32 @@
   "name": "semantic-logs",
   "version": "1.0.0",
   "description": "A simple and feature rich logging framework for node.js",
-  "main": "index.js",
+  "main": "./src/index.ts",
+  "exports": {
+    "default": "./dist/index.js",
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
   "scripts": {
     "build": "npx tsup src/index.ts",
-    "start": "npx tsx src/index.ts",
     "test": "npx jest",
     "prepare": "npx husky",
-    "lint": "npx eslint --fix src/**/*.ts",
-    "format": "npx prettier --write src/**/*.ts",
     "version": "npx @changesets/cli version",
     "release": "npx @changesets/cli publish"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "sandeep <sandeepshome.dev@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandeep-shome/semantic-log.git"
+    "url": "git+https://github.com/sandeep-shome/semantic-logs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/sandeep-shome/semantic-log/issues"
+    "url": "https://github.com/sandeep-shome/semantic-logs/issues"
   },
-  "homepage": "https://github.com/sandeep-shome/semantic-log#readme",
+  "homepage": "https://github.com/sandeep-shome/semantic-logs#readme",
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^20.4.1",
@@ -48,5 +51,6 @@
   "dependencies": {
     "boxen": "^8.0.1",
     "chalk": "^5.6.2"
-  }
+  },
+  "keywords": []
 }
