@@ -5,6 +5,7 @@
 /temp
 /.changeset
 /.github
+/.vscode
 
 # Exclude development/config files
 .prettierignore
