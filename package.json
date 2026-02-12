@@ -11,8 +11,8 @@
     "build": "npx tsup src/index.ts",
     "test": "npx jest",
     "prepare": "npx husky",
-    "version": "npx changesets",
-    "version:bump": "npx changesets version",
+    "version": "npx @changesets/cli ",
+    "version:bump": "npx @changesets/cli version",
     "release": "npm publish --access public"
   },
   "engines": {
