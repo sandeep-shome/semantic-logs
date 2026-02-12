@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   publish:
-    name: "Test and publish to npm registry"
+    name: "publish to npm registry"
     runs-on: ubuntu-latest
     permissions:
       contents: write
