@@ -1,4 +1,4 @@
-import { Logger } from '..';
+import { Logger, LogOptions } from '..';
 import { emitLog } from '../libs/logger';
 import { jest } from '@jest/globals';
 
@@ -39,7 +39,7 @@ describe('Logger Class', () => {
 
   describe('createLogger method', () => {
     it('should return a function that calls emitLog with preset options', () => {
-      const presetOptions = { level: 'error', icon: '🔥' };
+      const presetOptions: LogOptions = { level: 'error', icon: '🔥' };
       // eslint-disable-next-line
       const customLogger = logger.createLogger(presetOptions as any);
 
