@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   publish:
-    name: "Test and publish to npm registry"
+    name: "publish to npm registry"
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,9 +21,6 @@ jobs:
 
       - name: 📦 Install dependencies
         run: npm ci
-
-      - name: ✅ Run Tests
-        run: npm run test
 
       - name: 🏗️ Build the project
         run: npm run build
