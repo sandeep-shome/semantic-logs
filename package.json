@@ -4,7 +4,6 @@
   "description": "A simple and feature rich logging framework for node.js",
   "main": "./src/index.ts",
   "exports": {
-    "default": "./dist/index.js",
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
