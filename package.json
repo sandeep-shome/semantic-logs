@@ -1,6 +1,6 @@
 {
   "name": "semantic-logs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and feature rich logging framework for node.js",
   "main": "./src/index.ts",
   "exports": {
@@ -11,8 +11,8 @@
     "build": "npx tsup src/index.ts",
     "test": "npx jest",
     "prepare": "npx husky",
-    "version": "npx changesets",
-    "version:bump": "npx changesets version",
+    "version": "npx @changesets/cli ",
+    "version:bump": "npx @changesets/cli version",
     "release": "npm publish --access public"
   },
   "engines": {
