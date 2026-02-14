@@ -2,6 +2,7 @@
 ![NPM Unpacked Size (with version)](https://img.shields.io/npm/unpacked-size/semantic-logs/1.0.1)
 ![NPM Downloads](https://img.shields.io/npm/dm/semantic-logs)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sandeep-shome/semantic-logs/release.yml)
+![GitHub Release](https://img.shields.io/github/v/release/sandeep-shome/semantic-logs)
 
 # semantic-logs
 
