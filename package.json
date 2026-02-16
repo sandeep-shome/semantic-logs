@@ -1,6 +1,6 @@
 {
   "name": "semantic-logs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple and feature rich logging framework for node.js",
   "main": "./src/index.ts",
   "types": "./dist/index.d.ts",
@@ -54,5 +54,17 @@
     "boxen": "^8.0.1",
     "chalk": "^5.6.2"
   },
-  "keywords": []
+  "keywords": [
+    "logger",
+    "semantic-logging",
+    "chalk",
+    "boxen",
+    "cli",
+    "terminal",
+    "pretty-logs",
+    "structured-data",
+    "color",
+    "node-js",
+    "devtools"
+  ]
 }

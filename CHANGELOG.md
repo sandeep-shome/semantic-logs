@@ -1,5 +1,11 @@
 # semantic-logs
 
+## 1.1.1
+
+### Patch Changes
+
+- Add keyword in package json
+
 ## 1.1.0
 
 ### Minor Changes
