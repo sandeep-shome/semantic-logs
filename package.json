@@ -54,5 +54,17 @@
     "boxen": "^8.0.1",
     "chalk": "^5.6.2"
   },
-  "keywords": []
+  "keywords": [
+    "logger",
+    "semantic-logging",
+    "chalk",
+    "boxen",
+    "cli",
+    "terminal",
+    "pretty-logs",
+    "structured-data",
+    "color",
+    "node-js",
+    "devtools"
+  ]
 }
