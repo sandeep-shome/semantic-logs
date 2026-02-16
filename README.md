@@ -79,7 +79,7 @@ logger.createLogger(options);
 | --------- | ------------ | -------- | ---------------- |
 | Options   | `LogOptions` | `false`  | Options for log. |
 
-### 🛠 LogOptions Specification
+### 🛠️ LogOptions Specification
 
 | Property          | Type                  | Description                                                         |
 | :---------------- | :-------------------- | :------------------------------------------------------------------ |
